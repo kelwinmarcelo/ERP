@@ -5,21 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>ENTRADA ESTOQUE</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <button id="clickButton" onclick="closeSidebar()">botaoClick</button>
-  <div id="containerMenu" class="closeMenu">
-    <menu>Menu</menu>
-    <li>Login</li>
-    <p></p>
-    <li>Entrada de Estoque</li>
-    <li>Saída de Estoque</li>
-    <li>Cadastro de Produto</li>
-    <li>Cadastro de Fornecedor</li>
-
-  </div>
+  <header>
+    <h1 id="menuPrincipal">MENU nameUndefined</h1>
+    <span id="menuBurger" class="material-icons" onclick="clickMenu()">menu</span>
+    <menu id="lista">
+      <li>Login</li>
+      <li>Entrada de Estoque</li>
+      <li>Saída de Estoque</li>
+      <li>Cadastro de Produto</li>
+      <li>Cadastro de Fornecedor</li>
+    </menu>
+  </header>
   <script src="script.js"></script>
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
