@@ -23,14 +23,15 @@ span#menuBurger {
   background-color: rgb(65, 63, 63);
   color: white;
   display: block;
-  text-align: center;
+  text-align: start;
   padding: 10px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 span#menuBurger:hover {
   background-color: rgb(214, 214, 214);
   color: black;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
+

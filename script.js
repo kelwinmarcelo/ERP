@@ -6,3 +6,11 @@ function clickMenu() {
     lista.style.display = 'block'
   }
 }
+
+function abrirMenu() {
+  document.getElementById("menuBurger").style.width = '50%';
+}
+
+function abrirMenu() {
+  document.getElementById("menuBurger").style.width = '0%';
+}
