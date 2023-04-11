@@ -4,21 +4,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>ENTRADA ESTOQUE</title>
+    <title>FORNECEDOR</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="main.js" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <h1>Cadastro de Fornecedor</h1>
-    <div>
-        <p>Nome:</p>
-        <input> </input>
-        <p>Endereço:</p>
-        <input> </input>
-        <p>Telefone:</p>
-        <input> </input>
-        <p><button type="submit" name="cadastrar">CADASTRAR</button> </p>
-        <p><button type="reset" name="limpar">LIMPAR</button> </p>
-    </div>
-    
+    <form>
+        <div>
+            <label for="nome_fornecedor">Nome do Fornecedor</label>
+            <input id="nome_fornecedor" name="nome_fornecedor" required>
+        </div>
+        <div>
+            <label for="enderecoFornecedor">Endereço:</label>
+            <input id="enderecoFornecedor" name="enderecoFornecedor" required>
+        </div>
+        <div>
+            <label for="telefoneFornecedor">Telefone</label>
+            <input id="telefoneFornecedor" name="telefoneFornecedor" required>
+        </div>
+        <button type="submit" id="botaoCadastrarFornecedor" name="cadastrarFornecedor">CADASTRAR</button>
+        <button type="reset" name="limparFornecedor">LIMPAR</button>
+        </div>
+    </form>
+    <script src="main.js" />
+
+</body>

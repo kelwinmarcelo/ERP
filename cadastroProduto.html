@@ -7,37 +7,47 @@
     <title>PRODUTO</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="main.js" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
     <h1>Cadastro de Produto</h1>
-    <div>Nome do Produto</div>
-    <input></input>
-    <div>
-        <label>Tamanho do Produto</label>
-        <select name="tamanhos">
-            <option id="teste01">P</option>
-            <option id="teste02">M</option>
-            <option id="teste03">G</option>
-            <option id="teste04">GG</option>
-        </select>
-    </div>
-    <div>
-        <label>Categoria</label>
-        <select name="categorias">
-            <option id="teste05">BLUSA</option>
-            <option id="teste06">SAIA</option>
-            <option id="teste07">testcategoria03</option>
-            <option id="teste08">testcategoria04</option>
-        </select>
-    </div>
-    <div>
-        <label>Fornecedor</label>
-        <select name="fornecedores">
-            <option id="teste09">forn01</option>
-            <option id="teste10">forn02</option>
-            <option id="teste11">testcategoria03</option>
-            <option id="teste12">testcategoria04</option>
-        </select>
-    </div>   
+    <form>
+        <div>
+            <label for="nome_produto">Nome do Produto</label>
+            <input id="nome_produto" name="nome_produto" required>
+        </div>
+        <div>
+            <label for="tamanho_produto">Tamanho do Produto</label>
+            <select id="tamanho_produto" name="tamanho_produto" required>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+            </select>
+        </div>
+        <div>
+            <label for="categoria_produto">Categoria</label>
+            <select id="categoria_produto" name="categoria_produto" required>
+                <option value="SHORT">SHORT</option>
+                <option value="SAIA">SAIA</option>
+                <option value="CROPPED">CROPPED</option>
+                <option value="MACACÃO">MACACÃO</option>
+                <option value="CALÇA">CALÇA</option>
+                <option value="SAPATOS">SAPATOS</option>
+                <option value="BLUSA">BLUSA</option>
+                <option value="BODY">BODY</option>
+            </select>
+        </div>
+        <div>
+            <label for="fornecedor_produto">Fornecedor</label>
+            <select id="fornecedor_produto" name="fornecedor_produto" required>
+            </select>
+        </div>
+        <button type="submit" id="botaoCadastrarProduto">Salvar</button>
+    </form>
+    <script src="main.js" />
 </body>
+
+</html>
